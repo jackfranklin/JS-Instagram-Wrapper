@@ -3,5 +3,5 @@ These files will eventually become a fully fledged JS wrapper for the Instagram 
 For those following along with the tutorial, each tutorial is on its own branch. 
 
 ###Tutorial 1
-URL: *coming soon*
-Branch: `tutorial1`
+- URL: *coming soon*
+- Branch: `tutorial1`
