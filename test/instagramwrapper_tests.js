@@ -7,7 +7,7 @@ test('oembed', function() {
   instagramwrapper.oembed.web_url = "http://instagr.am/p/JYAdvJr0K9/";
   equal(instagramwrapper.oembed.web_url, "http://instagr.am/p/JYAdvJr0K9/", "Can set the web_url correctly");
 });
-asyncTest("oembed AJAX", function() {
+asyncTest("oembed AJAX", 4, function() {
   instagramwrapper.oembed.web_url = "http://instagr.am/p/JYAdvJr0K9/";
   instagramwrapper.oembed.query(function(res) {
     ok(res, "AJAX call got a result");
@@ -16,4 +16,7 @@ asyncTest("oembed AJAX", function() {
     equal(res.title, "Drainpipe", "The title returned is correct");
     start();
   });
+  setTimeout(function() {
+    start();
+  }, 1000);
 });
