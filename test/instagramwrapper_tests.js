@@ -12,7 +12,7 @@ asyncTest("oembed AJAX", 4, function() {
   instagramwrapper.oembed.query(function(res) {
     ok(res, "AJAX call got a result");
     ok(res.url, "URL exists in response");
-    equal(res.url, "http://distilleryimage5.instagram.com/9436051c85b011e18cf91231380fd29b_7.jpg", "URL returned is correct");
+    equal(res.url, "http://distilleryimage5.s3.amazonaws.com/9436051c85b011e18cf91231380fd29b_7.jpg", "URL returned is correct");
     equal(res.title, "Drainpipe", "The title returned is correct");
     start();
   });
